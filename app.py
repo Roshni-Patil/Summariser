@@ -66,4 +66,4 @@ def prediction():
 
         # print(summarise(text))
 
-app.run(host="192.168.43.54" , port=8080, debug=True)
+app.run(host="0.0.0.0" , port=8080, debug=True)
