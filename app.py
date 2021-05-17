@@ -1,12 +1,8 @@
-
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 from string import punctuation
 from heapq import nlargest
 from flask import Flask , render_template , request
-
-    
-
 
 app = Flask("Text_summarizer")
 
@@ -66,4 +62,4 @@ def prediction():
 
         # print(summarise(text))
 
-app.run(host="192.168.43.54" , port=8080, debug=True)
+app.run(host="localhost" , port=8080)
